@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#b85b2a">
+  <meta name="description" content="دانشنامه تصویری تجهیزات نظامی ایران؛ جست‌وجو، دسته‌بندی و معرفی عمومی تجهیزات با چاشنی چاتی‌پاتی.">
+  <title>چاتی‌پاتی | دانشنامه تجهیزات ایران</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="topline"></div>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="صفحه اصلی"><span class="brand-mark">چ</span><span><b>چاتی‌پاتی</b><small>دانشنامه تجهیزات ایران</small></span></a>
+    <nav class="nav"><a href="#catalog">دانشنامه</a><a href="#categories">دسته‌بندی‌ها</a><a href="#about">درباره پروژه</a></nav>
+    <button class="icon-button" id="themeBtn" title="تغییر حالت" aria-label="تغییر حالت">◐</button>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow"><span class="live-dot"></span> دانشنامه تصویری · نسخه ۱</span>
+        <h1>دنیای تجهیزات ایران،<br><em>یک‌جا و قابل جست‌وجو.</em></h1>
+        <p>از هواگردها و پهپادها تا خودروهای زرهی، شناورها و سامانه‌های پدافندی؛ با معرفی ساده، دسته‌بندی مرتب و دستیار جست‌وجوی چاتی‌پاتی.</p>
+        <div class="hero-actions"><a class="btn primary" href="#catalog">گشت‌وگذار در دانشنامه <span>←</span></a><a class="btn ghost" href="#ai-search">پرسیدن از چاتی‌پاتی ✦</a></div>
+        <div class="hero-stats"><div><b id="totalCount">۲۰+</b><span>مدخل نمونه</span></div><i></i><div><b>۸</b><span>دسته‌بندی</span></div><i></i><div><b>FA</b><span>کاملاً فارسی</span></div></div>
+      </div>
+      <div class="hero-art" aria-label="تصویرسازی هواگرد نظامی">
+        <div class="art-glow"></div><div class="art-grid"></div>
+        <div class="art-chip chip-one">EQUIPMENT / IR</div><div class="art-chip chip-two">PUBLIC KNOWLEDGE</div>
+        <div class="hero-emoji">✈</div><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="art-caption"><span class="caption-dot"></span><span><b>پایگاه شناخت تجهیزات</b><small>اطلاعات عمومی و آموزشی</small></span><span class="caption-arrow">↗</span></div>
+      </div>
+    </section>
+    <section class="search-section" id="ai-search">
+      <div class="section-heading"><div><span class="eyebrow">SMART FINDER</span><h2>چی می‌خوای بدونی؟</h2><p>نام وسیله یا سؤال خودت را بنویس؛ چاتی‌پاتی بین مدخل‌ها می‌گردد.</p></div><span class="sparkle">✦</span></div>
+      <div class="search-panel">
+        <div class="search-input-wrap"><span class="search-icon">⌕</span><input id="searchInput" type="search" placeholder="مثلاً: جنگنده اف-۱۴، پهپاد شاهد، تانک کرار..." autocomplete="off"><button id="clearSearch" class="clear-search" aria-label="پاک کردن">×</button><button id="searchBtn" class="search-submit">جست‌وجو <span>↵</span></button></div>
+        <div class="search-options"><span>پیشنهادها:</span><button class="suggestion" data-query="جنگنده">جنگنده</button><button class="suggestion" data-query="پهپاد">پهپاد</button><button class="suggestion" data-query="پدافند">پدافند</button><button class="suggestion" data-query="شناور">شناور</button></div>
+        <div id="assistantAnswer" class="assistant-answer" hidden></div>
+      </div>
+    </section>
+    <section id="categories" class="category-section">
+      <div class="section-heading"><div><span class="eyebrow">BROWSE BY TYPE</span><h2>موضوعت رو انتخاب کن</h2><p>برای پیدا کردن سریع‌تر، از دسته‌ها استفاده کن.</p></div><a class="text-link" href="#catalog">همه تجهیزات <span>←</span></a></div>
+      <div class="category-grid" id="categoryGrid">
+        <button class="category-tile active" data-category="همه"><span class="cat-icon">▦</span><b>همه تجهیزات</b><small>مرور کامل</small><span class="cat-arrow">↙</span></button>
+        <button class="category-tile" data-category="هواگرد"><span class="cat-icon">✈</span><b>هواگردها</b><small>جنگنده و ترابری</small><span class="cat-arrow">↙</span></button>
+        <button class="category-tile" data-category="پهپاد"><span class="cat-icon">⌁</span><b>پهپادها</b><small>پرنده‌های بدون سرنشین</small><span class="cat-arrow">↙</span></button>
+        <button class="category-tile" data-category="زرهی"><span class="cat-icon">▰</span><b>زمینی و زرهی</b><small>تانک و نفربر</small><span class="cat-arrow">↙</span></button>
+        <button class="category-tile" data-category="پدافند"><span class="cat-icon">⌖</span><b>پدافند هوایی</b><small>سامانه‌های دفاعی</small><span class="cat-arrow">↙</span></button>
+        <button class="category-tile" data-category="موشکی"><span class="cat-icon">↗</span><b>سامانه‌های موشکی</b><small>معرفی در سطح عمومی</small><span class="cat-arrow">↙</span></button>
+        <button class="category-tile" data-category="دریایی"><span class="cat-icon">≈</span><b>تجهیزات دریایی</b><small>شناور و زیردریایی</small><span class="cat-arrow">↙</span></button>
+        <button class="category-tile" data-category="سلاح انفرادی"><span class="cat-icon">⌁</span><b>سلاح انفرادی</b><small>تجهیزات سبک</small><span class="cat-arrow">↙</span></button>
+      </div>
+    </section>
+    <section class="catalog-section" id="catalog">
+      <div class="section-heading catalog-heading"><div><span class="eyebrow">THE CATALOG</span><h2 id="catalogTitle">تجهیزات منتخب</h2><p id="resultSummary">مدخل‌ها را ببین و برای جزئیات بیشتر باز کن.</p></div><label class="sort-wrap">مرتب‌سازی <select id="sortSelect"><option value="default">پیشنهادی</option><option value="name">نام الفبایی</option><option value="category">دسته‌بندی</option></select></label></div>
+      <div id="equipmentGrid" class="equipment-grid" aria-live="polite"></div>
+      <div id="emptyState" class="empty-state" hidden><span>⌕</span><h3>چیزی پیدا نشد!</h3><p>اسم دیگری امتحان کن یا دسته‌بندی را تغییر بده.</p><button class="btn primary" id="resetFilters">نمایش همه مدخل‌ها</button></div>
+      <div class="catalog-footer"><span class="footer-dot"></span><span>این فهرست قابل گسترش است؛ اطلاعات عمومی‌اند و ممکن است وضعیت خدمت یا مشخصات برخی مدل‌ها تغییر کند.</span></div>
+    </section>
+    <section class="about-section" id="about"><div class="about-icon">چ</div><div><span class="eyebrow">MADE WITH CURIOSITY</span><h2>ساخته‌شده با چاشنی چاتی‌پاتی.</h2><p>طراحی و پیاده‌سازی: <strong>امیرحسین</strong> · دستیار دانشنامه: <strong>چاتی‌پاتی</strong></p><small>این وب‌سایت یک پروژه آموزشی و اطلاعاتی مستقل است؛ وابسته به هیچ نهاد نظامی نیست.</small></div><a class="btn ghost" href="https://github.com/AmirHosseinNzafat/CHat-GPT-work" target="_blank" rel="noreferrer">مشاهده مخزن ↗</a></section>
+  </main>
+  <footer class="site-footer"><span>© چاتی‌پاتی · ساخته‌شده برای کنجکاوها</span><span>ساده، فارسی، قابل توسعه <b>✦</b></span></footer>
+  <dialog id="detailDialog" class="detail-dialog"><button class="dialog-close" id="dialogClose" aria-label="بستن">×</button><div id="detailContent"></div></dialog>
+  <script src="app.js"></script>
+</body>
+</html>
